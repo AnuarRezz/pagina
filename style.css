@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Estilo da barra de navegação */
+.navbar {
+  background-color:black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+img {
+  font-size: 24px;
+  font-weight: bold;
+  height: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover nos links */
+.nav-links li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+
+.menu {
+  width: 200px;
+  background-color: #333;
+  height: 100vh;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+
+.menu a {
+  display: block;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background-color: #575757;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.patrocinadores {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.patrocinadores h2 {
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Espaçamento entre os logos */
+  flex-wrap: wrap; /* Para ajustar em telas menores */
+  padding: 20px;
+}
+
+.logos img {
+  height: 50px; /* Altura dos logos */
+  filter: brightness(0) invert(1); /* Deixa os logos brancos */
+  transition: transform 0.3s;
+}
+
+.logos img:hover {
+  transform: scale(1.1); /* Efeito de zoom no hover */
+}
+
+  
+  
